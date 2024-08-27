@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Mama-sDelight/static/css/main.6d0be9a8.css",
-    "main.js": "/Mama-sDelight/static/js/main.254cfa43.js",
+    "main.js": "/Mama-sDelight/static/js/main.f479f1ba.js",
     "static/js/453.f2ed14cd.chunk.js": "/Mama-sDelight/static/js/453.f2ed14cd.chunk.js",
     "static/media/search.gif": "/Mama-sDelight/static/media/search.ae7d75403ba37a1e9204.gif",
     "static/media/working.png": "/Mama-sDelight/static/media/working.fe8f1f89bffb928e9cd8.png",
     "static/media/Error.png": "/Mama-sDelight/static/media/Error.9da95809390f4137ad78.png",
     "index.html": "/Mama-sDelight/index.html",
     "main.6d0be9a8.css.map": "/Mama-sDelight/static/css/main.6d0be9a8.css.map",
-    "main.254cfa43.js.map": "/Mama-sDelight/static/js/main.254cfa43.js.map",
+    "main.f479f1ba.js.map": "/Mama-sDelight/static/js/main.f479f1ba.js.map",
     "453.f2ed14cd.chunk.js.map": "/Mama-sDelight/static/js/453.f2ed14cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d0be9a8.css",
-    "static/js/main.254cfa43.js"
+    "static/js/main.f479f1ba.js"
   ]
 }
