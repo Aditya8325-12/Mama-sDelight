@@ -15,6 +15,7 @@ import store from "./Reducer/index";
 import { Provider } from "react-redux";
 import SingelRecipe from "./pages/SingelRecipe";
 import Food from "./pages/Food";
+import Home from "./pages/Home";
 store.subscribe(() => {
   console.log(store.getState());
 });
@@ -26,7 +27,7 @@ root.render(
       <BrowserRouter>
         <Head />
         <Routes>
-          <Route path="/" Component={App} />
+          <Route path="/" Component={Home} />
           <Route path="/foodInfo" Component={FoodInfo} />
           <Route path="/recipes" Component={Recipes} />
           <Route path="/about" Component={About} />

@@ -24,11 +24,14 @@
     "styled-components": "^6.1.12",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://Aditya8325-12.github.io/Mama-sDelight",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "tailwindcss": "^3.4.10"
   }
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../images/logo.png";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Head = () => {
   const PathLocation = useLocation();
 
@@ -139,13 +139,14 @@ const Head = () => {
         >
           <ul class="flex flex-col items-end  px-4 w-full font-medium lg:flex-row lg:space-x-8 lg:mt-0">
             <li>
-              <a
-                href="/"
-                class={`block py-2 px-3  font-bold     ${isActiveSmall("/")}`}
-                aria-current={PathLocation.path == "/" ? "page" : undefined}
-              >
-                Home
-              </a>
+              <Link to={"/"}>
+                <a
+                  class={`block py-2 px-3  font-bold     ${isActiveSmall("/")}`}
+                  aria-current={PathLocation.path == "/" ? "page" : undefined}
+                >
+                  Home
+                </a>
+              </Link>
             </li>
             <li>
               <a
