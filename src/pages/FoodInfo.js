@@ -81,20 +81,19 @@ const FoodInfo = () => {
       />
       <div className="lg:w-9/12  sm:w-10/12  w-full">
         {/* product main info  */}
-        <section class="py-6 bg-white md:py-16 dark:bg-gray-900 antialiased">
+        <section class="py-6 bg-white md:py-16   antialiased">
           <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0">
             <div class="lg:grid lg:grid-cols-2 lg:gap-8  xl:gap-16 rounded-lg">
               <div class="shrink-0  flex flex-col justify-center items-center gap-4 ">
                 <img
-                  class="w-full dark:hidden object-fill rounded-xl shadow-xl"
+                  class="w-full  object-fill rounded-xl shadow-xl"
                   src={image}
                   alt=""
                 />
                 <div class="mt-6 w-full flex justify-start px-3 sm:gap-4 sm:items-center sm:flex sm:mt-8">
                   <a
-                    href="#"
                     title=""
-                    class="flex items-center justify-center py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-sky-400 rounded-lg border border-gray-200 hover:bg-sky-200 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                    class="flex items-center justify-center py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-sky-400 rounded-lg border border-gray-200 hover:bg-sky-200 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 "
                     role="button"
                   >
                     <svg
@@ -120,14 +119,14 @@ const FoodInfo = () => {
               </div>
 
               <div class="mt-6 sm:mt-8 lg:mt-0 ">
-                <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl px-2 py-2 dark:text-white">
+                <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl px-2 py-2 ">
                   {name}
                 </h1>
 
-                {/* <hr class="my-6 md:my-8 border-gray-200  dark:border-gray-800" /> */}
+                {/* <hr class="my-6 md:my-8 border-gray-200 /> */}
 
                 <p
-                  class="mb-6 text-gray-500 mt-3 text-justify indent-8 dark:text-gray-400 px-2"
+                  class="mb-6 text-gray-500 mt-3 text-justify indent-8  px-2"
                   dangerouslySetInnerHTML={{ __html: content }}
                 ></p>
               </div>
@@ -139,62 +138,62 @@ const FoodInfo = () => {
 
         {Infodata !== null && Infodata !== undefined ? (
           <div className="w-full">
-            <section class="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
+            <section class="bg-white py-8 antialiased   md:py-16">
               <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
                 <div class="mx-auto max-w-5xl">
                   <div class="gap-4 sm:flex sm:items-center sm:justify-between">
-                    <h2 class="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">
+                    <h2 class="text-xl font-semibold text-gray-900  sm:text-2xl">
                       Nutrition
                     </h2>
                   </div>
 
                   <div class="mt-6 flow-root px-3  justify-center sm:mt-8">
-                    <div class="divide-y w-full  divide-gray-200 dark:divide-gray-700">
+                    <div class="divide-y w-full  divide-gray-200 ">
                       <div class="flex flex-wrap items-center gap-y-4 py-6">
                         <dl class="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
-                          <dt class="text-base font-medium text-gray-500 dark:text-gray-400">
+                          <dt class="text-base font-medium text-gray-500 ">
                             Category
                           </dt>
-                          <dd class="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">
+                          <dd class="mt-1.5 text-base font-semibold text-gray-900 ">
+                            <p class="hover:underline">
                               {Infodata.category.name}
-                            </a>
+                            </p>
                           </dd>
                         </dl>
                         <dl class="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
-                          <dt class="text-base font-medium text-gray-500 dark:text-gray-400">
+                          <dt class="text-base font-medium text-gray-500 ">
                             Calories
                           </dt>
-                          <dd class="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
-                            <a href="#" class="hover:underline">
+                          <dd class="mt-1.5 text-base font-semibold text-gray-900 ">
+                            <p class="hover:underline">
                               {Infodata.nutrition.calories.value}
-                            </a>
+                            </p>
                           </dd>
                         </dl>
 
                         <dl class="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
-                          <dt class="text-base font-medium text-gray-500 dark:text-gray-400">
+                          <dt class="text-base font-medium text-gray-500 ">
                             Fat
                           </dt>
-                          <dd class="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
+                          <dd class="mt-1.5 text-base font-semibold text-gray-900 ">
                             {Infodata.nutrition.fat.value}
                           </dd>
                         </dl>
 
                         <dl class="w-1/2 sm:w-1/4 lg:w-auto lg:flex-1">
-                          <dt class="text-base font-medium text-gray-500 dark:text-gray-400">
+                          <dt class="text-base font-medium text-gray-500 ">
                             Protin
                           </dt>
-                          <dd class="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
+                          <dd class="mt-1.5 text-base font-semibold text-gray-900 ">
                             {Infodata.nutrition.protein.value}
                           </dd>
                         </dl>
 
                         <dl class="w-1/2  sm:w-1/4 lg:w-auto lg:flex-1">
-                          <dt class="text-base font-medium text-gray-500 dark:text-gray-400">
+                          <dt class="text-base font-medium text-gray-500 ">
                             Carbs
                           </dt>
-                          <dd class="mt-1.5 text-base font-semibold text-gray-900 dark:text-white">
+                          <dd class="mt-1.5 text-base font-semibold text-gray-900 ">
                             {Infodata.nutrition.carbs.value}
                           </dd>
                         </dl>
@@ -210,12 +209,12 @@ const FoodInfo = () => {
         )}
 
         {/* product recipes  */}
-        <section class="bg-white py-8 antialiased dark:bg-gray-900 md:py-12">
+        <section class="bg-white py-8 antialiased   md:py-12">
           <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
             {/* <!-- Heading & Filters --> */}
             <div class="mb-4 items-end justify-between space-y-4 sm:flex sm:space-y-0 md:mb-8">
               <div className="w-full ">
-                <h2 class="mt-3 text-2xl text-center font-semibold text-gray-900 dark:text-white sm:text-2xl">
+                <h2 class="mt-3 text-2xl text-center font-semibold text-gray-900  sm:text-2xl">
                   Releted Recipes
                 </h2>
               </div>
@@ -225,11 +224,11 @@ const FoodInfo = () => {
             <div class="mb-4 grid gap-4 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 xl:grid-cols-4  place-content-center">
               {recipes.map((items) => {
                 return (
-                  <div class="rounded-lg    p-2 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                  <div class="rounded-lg    p-2 shadow-sm ">
                     <div class="pt-6 text-center">
                       <a
                         href={items.url}
-                        class="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"
+                        class="text-lg font-semibold leading-tight text-gray-900 hover:underline "
                       >
                         {items.title}
                       </a>

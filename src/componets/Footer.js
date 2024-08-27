@@ -1,23 +1,20 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer class="bg-white dark:bg-gray-900">
+    <footer class="bg-white ">
       <div class="mx-auto w-full  px-4 lg:py-6">
-        <hr class=" border-gray-200 dark:border-gray-700 " />
+        <hr class=" border-gray-200  " />
         <div class="flex  flex-col  md:flex-row mt-4 items-center md:justify-between justify-center gap-2 w-full">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span class="text-sm text-gray-500 sm:text-center ">
             © 2024{" "}
-            <a href="https://flowbite.com/" class="hover:underline">
+            <Link to={"/"} class="hover:underline">
               Mama’s Delight™
-            </a>
+            </Link>
             . All Rights Reserved.
           </span>
           <div class="flex   sm:justify-center sm:mt-0">
-            <a
-              href="#"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
+            <a href="#" class="text-gray-500 hover:text-gray-900 ">
               <svg
                 class="w-4 h-4"
                 aria-hidden="true"
@@ -33,10 +30,7 @@ const Footer = () => {
               </svg>
               <span class="sr-only">Facebook page</span>
             </a>
-            <a
-              href="#"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-            >
+            <a href="#" class="text-gray-500 hover:text-gray-900  ms-5">
               <svg
                 class="w-4 h-4"
                 aria-hidden="true"
@@ -48,10 +42,7 @@ const Footer = () => {
               </svg>
               <span class="sr-only">Discord community</span>
             </a>
-            <a
-              href="#"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-            >
+            <a href="#" class="text-gray-500 hover:text-gray-900  ms-5">
               <svg
                 class="w-4 h-4"
                 aria-hidden="true"
@@ -67,10 +58,7 @@ const Footer = () => {
               </svg>
               <span class="sr-only">Twitter page</span>
             </a>
-            <a
-              href="#"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-            >
+            <a href="#" class="text-gray-500 hover:text-gray-900  ms-5">
               <svg
                 class="w-4 h-4"
                 aria-hidden="true"
@@ -86,10 +74,7 @@ const Footer = () => {
               </svg>
               <span class="sr-only">GitHub account</span>
             </a>
-            <a
-              href="#"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-            >
+            <a href="#" class="text-gray-500 hover:text-gray-900  ms-5">
               <svg
                 class="w-4 h-4"
                 aria-hidden="true"

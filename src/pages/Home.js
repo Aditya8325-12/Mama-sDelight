@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -22,15 +22,18 @@ function Home() {
               food-related. Perfect for home cooks and food enthusiasts alike.
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="/recipes"
+              <Link
+                to={"/recipes"}
                 class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
-              </a>
-              <a href="/" class="text-sm font-semibold leading-6 text-gray-900">
+              </Link>
+              <Link
+                to={"/"}
+                class="text-sm font-semibold leading-6 text-gray-900"
+              >
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -117,19 +120,19 @@ function Home() {
                   </div>
                 </div>
 
-                <a
-                  href="/recipes"
+                <Link
+                  to={"/recipes"}
                   class="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
                 >
                   Learn more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <section class="w-11/12 mt-5 dark:bg-gray-900">
+      <section class="w-11/12 mt-5  ">
         <div class="gap-16 items-center py-8  mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 ">
           <div class="grid grid-cols-2 gap-4 mt-8 ">
             <img
@@ -144,7 +147,7 @@ function Home() {
             />
           </div>
           <div class="font-light text-gray-500 sm:text-lg mt-6 sm:mt-2 ">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
               Cooking Made Simple and Fun
             </h2>
             <p class="mb-4">
@@ -156,12 +159,12 @@ function Home() {
               Discover a world of flavors and enjoy every moment of your cooking
               journey with us.
             </p>
-            <a
-              href="/Food"
+            <Link
+              to={"/Food"}
               class="inline-block mt-5 rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
             >
               Learn more
-            </a>
+            </Link>
           </div>
         </div>
       </section>

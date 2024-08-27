@@ -107,7 +107,7 @@ const SingelRecipe = () => {
       {/* reciepe info */}
 
       {InfoData ? (
-        <section class="bg-white dark:bg-gray-900  flex flex-col items-center ">
+        <section class="bg-white    flex flex-col items-center ">
           <img
             className="w-full object-cover h-96  "
             src="https://images.unsplash.com/photo-1591267789076-2ea305ab92ec?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -234,12 +234,8 @@ const SingelRecipe = () => {
                     </svg>
                   </div>
 
-                  <p class="text-lg font-medium text-gray-900 dark:text-white">
-                    5.0
-                  </p>
-                  <p class="text-lg font-medium text-gray-500 dark:text-gray-400">
-                    (455)
-                  </p>
+                  <p class="text-lg font-medium text-gray-900 ">5.0</p>
+                  <p class="text-lg font-medium text-gray-500 ">(455)</p>
                 </div>
               </div>
 
@@ -317,7 +313,7 @@ const SingelRecipe = () => {
       {/* Ingredients */}
       <div className="w-full  flex flex-col items-center justify-center px-4 ">
         <div className="w-full sm:w-10/12  px-4  flex justify-start ">
-          <h2 class="mt-3 lg:text-4xl font-semibold text-gray-900 dark:text-white text-2xl">
+          <h2 class="mt-3 lg:text-4xl font-semibold text-gray-900  text-2xl">
             Ingredients
           </h2>
         </div>
@@ -350,9 +346,9 @@ const SingelRecipe = () => {
       </div>
 
       {/* Recipe header  */}
-      <section class="bg-white w-full flex justify-center items-center dark:bg-gray-900">
-        <div class="font-light flex  sm:w-10/12 w-full px-4  mt-9 justify-between items-center gap-5 text-gray-500 sm:text-lg dark:text-gray-400">
-          <h2 class="mb-4 sm:text-4xl text-2xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+      <section class="bg-white w-full flex justify-center items-center  ">
+        <div class="font-light flex  sm:w-10/12 w-full px-4  mt-9 justify-between items-center gap-5 text-gray-500 sm:text-lg ">
+          <h2 class="mb-4 sm:text-4xl text-2xl tracking-tight font-extrabold text-gray-900 ">
             Recipe Steps
           </h2>
           <dl class="flex justify-end items-center sm:gap-10 gap-4  text-green-500 font-bold  ">
@@ -387,13 +383,13 @@ const SingelRecipe = () => {
       </section>
 
       {/* similar recipes  */}
-      <section class="bg-white dark:bg-gray-900">
+      <section class="bg-white  ">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
           <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
               Similar Recipes
             </h2>
-            <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+            <p class="font-light text-gray-500 lg:mb-16 sm:text-xl ">
               Explore the whole collection of open-source web components and
               elements built with the utility classes from Tailwind
             </p>
@@ -401,10 +397,10 @@ const SingelRecipe = () => {
           <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
             {similarRecipes.map((items) => {
               return (
-                <div class="items-center bg-gray-50  rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+                <div class="items-center bg-gray-50  rounded-lg shadow sm:flex ">
                   <div class="p-5">
-                    <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                      <a href="#">{items.title}</a>
+                    <h3 class="text-xl font-bold tracking-tight text-gray-900 ">
+                      <p>{items.title}</p>
                     </h3>
                   </div>
                 </div>

@@ -6,27 +6,24 @@ const Head = () => {
 
   const isActive = (path) => {
     return PathLocation.pathname === path
-      ? "text-white bg-blue-700 rounded  md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-      : "text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
+      ? "text-white bg-blue-700 rounded  md:bg-transparent md:text-blue-700 md:p-0 "
+      : "text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ";
   };
 
   return (
-    <nav class="bg-slate-400/0 text-white  h-20 dark:bg-gray-900 fixed w-full z-20 top-0 start-0  border-gray-200 dark:border-gray-600">
+    <nav class="bg-slate-400/0 text-white  h-20  fixed w-full z-20 top-0 start-0  border-gray-200 ">
       <div class="max-w-screen-xl flex h-full flex-wrap items-center justify-between mx-auto p-4">
-        <a
-          href="https://flowbite.com/"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
+        <Link to={"/"} class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={logo} class="h-8" alt="moms Kitchen Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap ">
             Mama’s Delight
           </span>
-        </a>
+        </Link>
         <div class="flex md:hidden md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
             aria-controls="navbar-sticky"
             aria-expanded="false"
           >
@@ -52,39 +49,47 @@ const Head = () => {
           class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul class=" flex flex-col p-4 md:p-0 mt-4 font-medium border  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul class=" flex flex-col p-4 md:p-0 mt-4 font-medium border  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  ">
             <li>
-              <a
-                href="/"
-                class={`block text-white py-2 px-3       ${isActive("/")}`}
-                aria-current={PathLocation.path == "/" ? "page" : undefined}
+              <Link
+                to="/"
+                className={`block py-2 px-3 font-bold ${isActive("/")}`}
+                aria-current={location.pathname === "/" ? "page" : undefined}
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/about"
-                class={`block text-white py-2 px-3 ${isActive("/about")} `}
+              <Link
+                to="/Food"
+                className={`block py-2 px-3 font-bold ${isActive("/Food")}`}
               >
-                About
-              </a>
+                Foods
+              </Link>
             </li>
             <li>
-              <a
-                href="/recipes"
-                class={`block text-white py-2 px-3 ${isActive("/recipes")} `}
+              <Link
+                to="/recipes"
+                className={`block py-2 px-3 font-bold ${isActive("/recipes")}`}
               >
                 Recipes
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/contact"
-                class={`block text-white py-2 px-3 ${isActive("/contact")} `}
+              <Link
+                to="/about"
+                className={`block py-2 px-3 font-bold ${isActive("/about")}`}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className={`block py-2 px-3 font-bold ${isActive("/contact")}`}
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

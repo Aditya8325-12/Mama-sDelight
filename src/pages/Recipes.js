@@ -97,7 +97,7 @@ const Recipes = () => {
             <div class="relative">
               <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                 <svg
-                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  class="w-4 h-4 text-gray-500 "
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -115,7 +115,7 @@ const Recipes = () => {
               <input
                 type="search"
                 id="default-search"
-                class="block outline-none w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="block outline-none w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
                 placeholder="Search Mockups, Logos..."
                 required
                 value={searchName}
@@ -125,7 +125,7 @@ const Recipes = () => {
               />
               <button
                 type="submit"
-                class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 "
               >
                 Search
               </button>
@@ -134,11 +134,11 @@ const Recipes = () => {
         </div>
       </div>
       {RecipeData.length > 0 ? (
-        <section class="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-12">
+        <section class="bg-gray-50 py-8 antialiased   md:py-12">
           <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
             <div class="mb-4 items-end justify-between space-y-4 sm:flex sm:space-y-0 md:mb-8">
               <div>
-                <h2 class="mt-3 text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">
+                <h2 class="mt-3 text-xl font-semibold text-gray-900  sm:text-2xl">
                   Similar Recipes
                 </h2>
               </div>
@@ -150,23 +150,18 @@ const Recipes = () => {
                 {RecipeData.map((items) => {
                   return (
                     <Link to={"/SingleRecipes"} state={{ data: items }}>
-                      <div class="rounded-lg border border-gray-200  px-0  shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                      <div class="rounded-lg border border-gray-200  px-0  shadow-sm ">
                         <div class="h-56 w-full rounded-lg">
-                          <a href="#">
-                            <img
-                              class="mx-auto h-full object-cover  rounded-t-lg w-full"
-                              src={items.image}
-                              alt=""
-                            />
-                          </a>
+                          <img
+                            class="mx-auto h-full object-cover  rounded-t-lg w-full"
+                            src={items.image}
+                            alt=""
+                          />
                         </div>
                         <div class="py-6 ps-6">
-                          <a
-                            href="#"
-                            class="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white"
-                          >
+                          <p class="text-lg font-semibold leading-tight text-gray-900 hover:underline ">
                             {items.title}
-                          </a>
+                          </p>
 
                           <div class="mt-2 flex items-center gap-2">
                             <div class="flex items-center">
@@ -221,10 +216,10 @@ const Recipes = () => {
                               </svg>
                             </div>
 
-                            <p class="text-sm font-medium text-gray-900 dark:text-white">
+                            <p class="text-sm font-medium text-gray-900 ">
                               5.0
                             </p>
-                            <p class="text-sm font-medium text-gray-500 dark:text-gray-400">
+                            <p class="text-sm font-medium text-gray-500 ">
                               (455)
                             </p>
                           </div>
@@ -242,7 +237,7 @@ const Recipes = () => {
                   onClick={() => {
                     setCurrentPage(CurrentPage - 1);
                   }}
-                  class="flex items-center justify-center px-4 h-10 me-3 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  class="flex items-center justify-center px-4 h-10 me-3 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 "
                 >
                   <svg
                     class="w-3.5 h-3.5 me-2 rtl:rotate-180"
@@ -270,7 +265,7 @@ const Recipes = () => {
                   onClick={() => {
                     setCurrentPage(CurrentPage + 1);
                   }}
-                  class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 "
                 >
                   Next
                   <svg
@@ -306,15 +301,15 @@ const Recipes = () => {
               Sorry, we couldn’t find the data you’re looking for.
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="/"
+              <Link
+                to={"/"}
                 class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Go back home
-              </a>
-              <a href="#" class="text-sm font-semibold text-gray-900">
+              </Link>
+              <Link to={"/"} class="text-sm font-semibold text-gray-900">
                 Contact support <span aria-hidden="true">&rarr;</span>
-              </a>
+              </Link>
             </div>
           </div>
         </main>

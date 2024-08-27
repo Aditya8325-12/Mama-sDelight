@@ -35,8 +35,8 @@ root.render(
           <Route path="/SingleRecipes" Component={SingelRecipe} />
           <Route path="/Food" Component={Food} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </Provider>
   </React.StrictMode>
 );

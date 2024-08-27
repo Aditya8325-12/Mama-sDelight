@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 const About = () => {
   return (
@@ -20,15 +21,18 @@ const About = () => {
               food-related. Perfect for home cooks and food enthusiasts alike.
             </p>
             <div class="mt-10 flex items-center justify-end pr-5 gap-x-6">
-              <a
-                href="/recipes"
+              <Link
+                to={"/recipes"}
                 class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
-              </a>
-              <a href="/" class="text-sm font-semibold leading-6 text-gray-900">
+              </Link>
+              <Link
+                to={"/"}
+                class="text-sm font-semibold leading-6 text-gray-900"
+              >
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -52,24 +56,27 @@ const About = () => {
               food-related. Perfect for home cooks and food enthusiasts alike.
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="/recipes"
+              <Link
+                to={"/recipes"}
                 class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
-              </a>
-              <a href="/" class="text-sm font-semibold leading-6 text-gray-900">
+              </Link>
+              <Link
+                to={"/"}
+                class="text-sm font-semibold leading-6 text-gray-900"
+              >
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
-      <section class="bg-white dark:bg-gray-900">
+      <section class="bg-white ">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-          <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+          <div class="font-light text-gray-500 sm:text-lg ">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
               A Taste of Home in Every Bite
             </h2>
             <p class="mb-4">
