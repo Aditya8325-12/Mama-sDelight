@@ -9,7 +9,7 @@ const Contact = () => {
     // e.preventDefult();
     e.preventDefault();
 
-    console.log("on clik button");
+
     emailjs
       .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, {
         publicKey: process.env.REACT_APP_PUBLC_KEY,
