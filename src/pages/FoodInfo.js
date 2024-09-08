@@ -23,7 +23,7 @@ const FoodInfo = () => {
       try {
         if (FoodData) {
           const response = await fetch(
-            `https://api.spoonacular.com/food/images/analyze?apiKey=c180356eb2ca459f8b71b27f1efe2eec&imageUrl=${FoodData.image}`
+            `https://api.spoonacular.com/food/images/analyze?apiKey=apiKey=${process.env.REACT_APP_API_KEY}&imageUrl=${FoodData.image}`
           );
           const infoData = await response.json();
           if (response.ok) {
