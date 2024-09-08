@@ -58,7 +58,7 @@ const Footer = () => {
               </svg>
               <span class="sr-only">Twitter page</span>
             </a>
-            <a href="#" class="text-gray-500 hover:text-gray-900  ms-5">
+            <a href="https://github.com/Aditya8325-12/Mama-sDelight" class="text-gray-500 hover:text-gray-900  ms-5">
               <svg
                 class="w-4 h-4"
                 aria-hidden="true"
