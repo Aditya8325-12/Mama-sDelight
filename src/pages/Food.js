@@ -28,7 +28,7 @@ function Food() {
         Dispatch(changeLoadingState(false));
         const data = await response.json();
         setData(data.searchResults.flatMap((item) => item.results));
-        console.log("data==", Data);
+        
       } catch (error) {
         Dispatch(changeLoadingState(false));
       }
