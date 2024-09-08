@@ -11,7 +11,7 @@ const Contact = () => {
 
     console.log("on clik button");
     emailjs
-      .sendForm("service_5eaz1py", "template_936u784", form.current, {
+      .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, {
         publicKey: process.env.REACT_APP_PUBLC_KEY,
       })
       .then(
