@@ -330,7 +330,7 @@ const SingelRecipe = () => {
                 </div>
                 <div class=" shrink-0 justify-center sm:flex sm:flex-col sm:items-end">
                   <p class="text-xl font-bold leading-6 text-gray-900">
-                    {items.amount} KG
+                    {items.amount} {items.unit}
                   </p>
                 </div>
               </li>
