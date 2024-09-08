@@ -23,7 +23,6 @@ const SingelRecipe = () => {
   const [nutrition, setnutrition] = useState(null);
   useEffect(() => {
     const data = state?.data;
-    console.log("data", data);
     setData(data);
   }, [state]);
 
@@ -32,14 +31,11 @@ const SingelRecipe = () => {
       try {
         dispatch(changeLoadingState(true));
 
-        console.log("data", Data.id);
-
         const response = await fetch(
           `https://api.spoonacular.com/recipes/${Data.id}/information?apiKey=${Apikey}`
         );
         const data = await response.json();
         if (response.ok) {
-          // console.log("data", data);
           setInfoData(data);
           setextreaData(data.extendedIngredients);
           setSteps(data.analyzedInstructions[0].steps);
@@ -56,7 +52,6 @@ const SingelRecipe = () => {
       try {
         dispatch(changeLoadingState(true));
 
-        console.log("data", Data.id);
 
         const response = await fetch(
           `https://api.spoonacular.com/recipes/${Data.id}/similar?apiKey=${Apikey}&number=6`
@@ -83,7 +78,6 @@ const SingelRecipe = () => {
         const data = await response.json();
         if (response.ok) {
           setnutrition(data);
-          console.log("nutrition data ", data);
         } else {
           throw new Error("data not fetch");
         }
