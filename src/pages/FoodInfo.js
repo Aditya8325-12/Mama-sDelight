@@ -27,9 +27,7 @@ const FoodInfo = () => {
           );
           const infoData = await response.json();
           if (response.ok) {
-            console.log("info data===", infoData);
             setInfodata(infoData);
-            console.log("info data", Infodata);
             setrecipes(infoData.recipes);
           } else {
             setError(true);
