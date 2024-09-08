@@ -21,10 +21,8 @@ const Recipes = () => {
         );
         const data = await response.json();
         if (response.ok) {
-          console.log("APi Data== ", Apikey);
           setRecipeData(data.results);
           settotalPages(Math.ceil(data.totalResults / 6));
-          console.log("reciepe data===", parseInt(totalPages));
         } else {
           throw new Error(response.message || "data will not given ");
         }
@@ -46,7 +44,6 @@ const Recipes = () => {
 
   const searchdata = async (e) => {
     e.preventDefault();
-    console.log("search name =", searchName);
     try {
       if (searchName !== "") {
         setLoading(true);
@@ -58,7 +55,6 @@ const Recipes = () => {
 
         const data = await response.json();
         if (response.ok) {
-          console.log("data.results==", data.results);
           setRecipeData(data.results);
           settotalPages(Math.ceil(data.totalResults / 6));
           setsearchName("");
